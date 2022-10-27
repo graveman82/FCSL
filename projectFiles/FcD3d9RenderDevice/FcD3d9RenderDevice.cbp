@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FcD3d9RenderDevice" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler_x32" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../bin/FcD3d9RenderDevice_Dbg" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../bin/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_x32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-DFC_DEBUG" />
+					<Add option="-DFCD3D9RENDERDEVICE__USE_STD_INT_FOR_FIXED_SIZE_INT" />
+					<Add option="-DFCD3D9RENDERDEVICE__USE_STL_VECTOR_FOR_DYNAMICARRAY" />
+					<Add option="-DFCD3D9RENDERDEVICE__USE_STL_MAP_FOR_MAP" />
+					<Add option="-DFCD3D9RENDERDEVICE__PRINT_DEVICE_CAPS" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="d3d9" />
+					<Add library="d3dx9" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FcD3d9RenderDevice" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_x32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../../src/FcD3d9RenderDevice" />
+		</Compiler>
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDevice.cpp" />
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDevice.h" />
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDeviceCfg.h" />
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDeviceExport.cpp" />
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDeviceIntTypes.h" />
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDeviceMain.cpp" />
+		<Unit filename="../../src/FcD3d9RenderDevice/FcD3d9RenderDeviceMain.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
